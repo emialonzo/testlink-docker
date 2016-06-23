@@ -5,6 +5,8 @@ Basado en [imtnd/testlink](https://hub.docker.com/r/imtnd/testlink/~/dockerfile/
 ## Instrucciones
 
 ```
+git clone https://github.com/emialonzo/testlink-docker testlink
+cd testlink
 docker-compose up
 ```
 
