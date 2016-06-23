@@ -1,0 +1,15 @@
+db:
+  image: mdillon/postgis
+  environment:
+    POSTGRES_USER: testlink
+    POSTGRES_PASSWORD: testlink
+    POSTGRES_DB: testlink
+web:
+  build: .
+  volumes:
+    - ./code:/var/www/html
+  ports:
+    - "8080:80"
+  links:
+    - db
+  working_dir: /var/www/html
