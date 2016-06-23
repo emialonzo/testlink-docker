@@ -10,7 +10,7 @@ cd testlink
 docker-compose up
 ```
 
-Una vez levantado el conteiner hay que poblar la carpeta code, para ello correr
+Una vez levantado el conteiner hay que poblar la carpeta code con el codigo de testlink y cambiar los permisos, se puede hacer a mano o correr el siguiente script.
 ```
 sh install.sh
 ```
