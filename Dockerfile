@@ -5,10 +5,6 @@ MAINTAINER imtnd
 RUN apt-get update -yqq
 RUN apt-get install -yqq apache2 php5 wget php5-pgsql php5-ldap php5-gd
 
-RUN wget -q http://sourceforge.net/projects/testlink/files/TestLink%201.9/TestLink%201.9.14/testlink-1.9.14.tar.gz/download -O testlink-1.9.14.tar.gz &&\
-    tar zxvf testlink-1.9.14.tar.gz && \
-    mv testlink-1.9.14 /var/www/html/testlink && \
-    rm testlink-1.9.14.tar.gz
 
 RUN echo "max_execution_time=3000" >> /etc/php5/apache2/php.ini && \
     echo "session.gc_maxlifetime=60000" >> /etc/php5/apache2/php.ini
